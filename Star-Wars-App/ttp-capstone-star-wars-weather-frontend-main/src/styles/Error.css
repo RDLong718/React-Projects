@@ -1,0 +1,140 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
+body {
+  
+}
+
+.error-page {
+  background-color: #000000;
+
+  background: url("https://c.tenor.com/KGHNYLeVygwAAAAC/death-star-alderaan.gif")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top : 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.error-title {
+  font-family: "star_jedi_outlineregular";
+  color: gold;
+  font-weight: 500;
+  font-size: 250%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.error-button {
+  margin-top: 1%;
+  outline: none;
+  background: #ffc300;
+  border: none;
+  border-radius: 20px;
+  font-size: larger;
+  font-weight: 700;
+  color: white;
+  box-shadow: 5px 2px #888888;
+}
+
+.error-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.685);
+  filter: opacity(90%);
+  filter: blur(0.2px);
+  filter: saturate(2);
+}
+@font-face {
+  font-family: "star_jedi_outlineregular";
+  src: url("/src/styles/starjout-webfont.woff2") format("woff2"),
+    url("/src/styles/starjout-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+div[class*="box"] {
+  height: 33.33%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-1 {
+  background-color: transparent;
+}
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+}
+
+/* 
+  ========================
+        BUTTON ONE
+  ========================
+  */
+.btn-one {
+  color: gold;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-link {
+  color: gold;
+  cursor: crosshair;
+}
+.btn-one span {
+  font-family: "star_jedi_outlineregular";
+  z-index: 2;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.btn-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 2px solid goldenrod;
+
+  background-color: transparent;
+}
+.btn-one::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 2px solid goldenrod;
+  background-color: rgba(255, 255, 255, 0);
+}
+.btn-one:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+.btn-one:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255, 255, 255, 0);
+}
